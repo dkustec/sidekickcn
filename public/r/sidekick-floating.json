@@ -10,10 +10,10 @@
   "registryDependencies": [
     "button",
     "scroll-area",
-    "/r/sidekick-provider.json",
-    "/r/ai-elements-message.json",
-    "/r/ai-elements-prompt-input.json",
-    "/r/ai-elements-shimmer.json"
+    "https://sidekickcn-one.vercel.app/r/sidekick-provider.json",
+    "https://sidekickcn-one.vercel.app/r/ai-elements-message.json",
+    "https://sidekickcn-one.vercel.app/r/ai-elements-prompt-input.json",
+    "https://sidekickcn-one.vercel.app/r/ai-elements-shimmer.json"
   ],
   "files": [
     {
@@ -23,4 +23,5 @@
     }
   ]
 }
+
 

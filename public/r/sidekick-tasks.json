@@ -10,7 +10,7 @@
   "registryDependencies": [
     "button",
     "badge",
-    "/r/sidekick-provider.json"
+    "https://sidekickcn-one.vercel.app/r/sidekick-provider.json"
   ],
   "files": [
     {
@@ -20,4 +20,5 @@
     }
   ]
 }
+
 

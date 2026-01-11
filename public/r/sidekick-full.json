@@ -5,18 +5,18 @@
   "title": "Complete sidekick/cn",
   "description": "Full sidekick/cn with all layouts (floating, sidebar, panel), AI elements, and  features",
   "registryDependencies": [
-    "/r/sidekick-config.json",
-    "/r/use-sidekick.json",
-    "/r/sidekick-provider.json",
-    "/r/ai-elements-full.json",
-    "/r/sidekick-ui.json",
-    "/r/sidekick-header.json",
-    "/r/sidekick-chat.json",
-    "/r/sidekick-floating.json",
-    "/r/sidekick-sidebar.json",
-    "/r/sidekick-tasks.json",
-    "/r/sidekick-floating-bar.json",
-    "/r/sidekick-ai-route.json"
+    "https://sidekickcn-one.vercel.app/r/sidekick-config.json",
+    "https://sidekickcn-one.vercel.app/r/use-sidekick.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-provider.json",
+    "https://sidekickcn-one.vercel.app/r/ai-elements-full.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-ui.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-header.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-chat.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-floating.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-sidebar.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-tasks.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-floating-bar.json",
+    "https://sidekickcn-one.vercel.app/r/sidekick-ai-route.json"
   ],
   "files": [
     {
@@ -26,4 +26,5 @@
     }
   ]
 }
+
 
