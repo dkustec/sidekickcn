@@ -4,7 +4,9 @@
   "type": "registry:hook",
   "title": "useSidekick Hook",
   "description": "React hook for accessing sidekick/cn context and AI functionality",
-  "registryDependencies": "https://sidekickcn-one.vercel.app/r/sidekick-config.json",
+  "registryDependencies": [
+    "https://sidekickcn-one.vercel.app/r/sidekick-config.json"
+  ],
   "files": [
     {
       "path": "src/hooks/use-sidekick.tsx",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "sidekick-ai-route",
-  "type": "registry:route",
+  "type": "registry:component",
   "title": "sidekick/cn AI Route",
   "description": "Next.js API route for sidekick/cn",
   "dependencies": [
@@ -11,8 +11,8 @@
   "files": [
     {
       "path": "src/app/api/ai/route.ts",
-      "content": "import { openai } from \"@ai-sdk/openai\";\nimport { generateText } from \"ai\";\nimport { NextRequest, NextResponse } from \"next/server\";\n\nexport async function POST(request: NextRequest) {\n  try {\n    const { prompt, model = \"gpt-4o-mini\", temperature = 0.7, maxTokens = 2000 } =\n      await request.json();\n\n    const { text } = await generateText({\n      model: openai(model),\n      prompt,\n      temperature,\n      maxTokens,\n      system:\n        \"You are a helpful AI assistant embedded in a website. Be friendly, concise, and helpful.\",\n    });\n\n    return NextResponse.json({ response: text });\n  } catch (error) {\n    console.error(\"AI API Error:\", error);\n    return NextResponse.json(\n      { error: \"Failed to process request\" },\n      { status: 500 },\n    );\n  }\n}",
-      "type": "registry:route"
+      "type": "registry:component",
+      "content": "import { openai } from \"@ai-sdk/openai\";\nimport { generateText } from \"ai\";\nimport { NextRequest, NextResponse } from \"next/server\";\n\nexport async function POST(request: NextRequest) {\n  try {\n    const { prompt, model = \"gpt-4o-mini\", temperature = 0.7, maxTokens = 2000 } =\n      await request.json();\n\n    const { text } = await generateText({\n      model: openai(model),\n      prompt,\n      temperature,\n      maxTokens,\n      system:\n        \"You are a helpful AI assistant embedded in a website. Be friendly, concise, and helpful.\",\n    });\n\n    return NextResponse.json({ response: text });\n  } catch (error) {\n    console.error(\"AI API Error:\", error);\n    return NextResponse.json(\n      { error: \"Failed to process request\" },\n      { status: 500 },\n    );\n  }\n}"
     }
   ]
 }
