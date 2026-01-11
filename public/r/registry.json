@@ -20,7 +20,7 @@
       "type": "registry:hook",
       "title": "useSidekick Hook",
       "description": "React hook for accessing sidekick/cn context and AI functionality",
-      "registryDependencies": ["sidekick-config"],
+      "registryDependencies": "https://sidekickcn.vercel.app/r/sidekick-config.json",
       "files": [
         {
           "path": "src/hooks/use-sidekick.tsx",
@@ -34,7 +34,10 @@
       "title": "sidekick/cn Provider",
       "description": "Context provider for sidekick/cn with AI Gateway integration, workflow management, and composable architecture",
       "dependencies": [],
-      "registryDependencies": ["sidekick-config", "use-sidekick"],
+      "registryDependencies": [
+        "https://sidekickcn.vercel.app/r/sidekick-config.json",
+        "https://sidekickcn.vercel.app/r/use-sidekick.json"
+      ],
       "files": [
         {
           "path": "src/components/sidekick/sidekick-provider.tsx",
@@ -47,8 +50,10 @@
       "type": "registry:component",
       "title": "AI Message Elements",
       "description": "Message components with branching, versioning, and navigation",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": "button",
       "files": [
         {
           "path": "src/components/ai-elements/message.tsx",
@@ -61,8 +66,10 @@
       "type": "registry:component",
       "title": "AI Conversation Elements",
       "description": "Conversation container with auto-scrolling and scroll-to-bottom functionality",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": "button",
       "files": [
         {
           "path": "src/components/ai-elements/conversation.tsx",
@@ -75,8 +82,10 @@
       "type": "registry:component",
       "title": "AI Sources Elements",
       "description": "Collapsible source citations with links",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["collapsible"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": "collapsible",
       "files": [
         {
           "path": "src/components/ai-elements/sources.tsx",
@@ -89,8 +98,10 @@
       "type": "registry:component",
       "title": "AI Reasoning Elements",
       "description": "Collapsible reasoning display with duration tracking",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["collapsible"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": "collapsible",
       "files": [
         {
           "path": "src/components/ai-elements/reasoning.tsx",
@@ -103,7 +114,9 @@
       "type": "registry:component",
       "title": "AI Suggestion Elements",
       "description": "Clickable suggestion chips for quick prompts",
-      "dependencies": ["lucide-react"],
+      "dependencies": [
+        "lucide-react"
+      ],
       "files": [
         {
           "path": "src/components/ai-elements/suggestion.tsx",
@@ -116,8 +129,14 @@
       "type": "registry:component",
       "title": "AI Prompt Input Elements",
       "description": "Composable prompt input with attachments, tools, and actions",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "textarea", "dropdown-menu"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "textarea",
+        "dropdown-menu"
+      ],
       "files": [
         {
           "path": "src/components/ai-elements/prompt-input.tsx",
@@ -130,8 +149,15 @@
       "type": "registry:component",
       "title": "AI Model Selector Elements",
       "description": "Model selection dropdown with search and grouping",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["popover", "input", "button", "badge"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "popover",
+        "input",
+        "button",
+        "badge"
+      ],
       "files": [
         {
           "path": "src/components/ai-elements/model-selector.tsx",
@@ -157,14 +183,14 @@
       "title": "All AI Elements",
       "description": "Complete set of AI element components",
       "registryDependencies": [
-        "ai-elements-message",
-        "ai-elements-conversation",
-        "ai-elements-sources",
-        "ai-elements-reasoning",
-        "ai-elements-suggestion",
-        "ai-elements-prompt-input",
-        "ai-elements-model-selector",
-        "ai-elements-shimmer"
+        "https://sidekickcn.vercel.app/r/ai-elements-message.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-conversation.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-sources.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-reasoning.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-suggestion.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-prompt-input.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-model-selector.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-shimmer.json"
       ],
       "files": [
         {
@@ -178,7 +204,7 @@
       "type": "registry:component",
       "title": "sidekick/cn UI",
       "description": "Root wrapper with layout options (default, panel, minimal, fullscreen)",
-      "registryDependencies": [],
+      "registryDependencies": null,
       "files": [
         {
           "path": "src/components/sidekick/sidekick-ui.tsx",
@@ -191,8 +217,10 @@
       "type": "registry:component",
       "title": "sidekick/cn Header",
       "description": "Header with title, subtitle, and status indicator",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": [],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": null,
       "files": [
         {
           "path": "src/components/sidekick/sidekick-header.tsx",
@@ -205,17 +233,19 @@
       "type": "registry:component",
       "title": "sidekick/cn Chat",
       "description": "Chat with sources, reasoning, suggestions, model selector, and full AI elements",
-      "dependencies": ["lucide-react"],
+      "dependencies": [
+        "lucide-react"
+      ],
       "registryDependencies": [
-        "sidekick-provider",
-        "ai-elements-message",
-        "ai-elements-conversation",
-        "ai-elements-sources",
-        "ai-elements-reasoning",
-        "ai-elements-suggestion",
-        "ai-elements-prompt-input",
-        "ai-elements-model-selector",
-        "ai-elements-shimmer"
+        "https://sidekickcn.vercel.app/r/sidekick-provider.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-message.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-conversation.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-sources.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-reasoning.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-suggestion.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-prompt-input.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-model-selector.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-shimmer.json"
       ],
       "files": [
         {
@@ -229,8 +259,14 @@
       "type": "registry:component",
       "title": "sidekick/cn Tasks",
       "description": "Workflow execution with status tracking and customization",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "badge", "sidekick-provider"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "badge",
+        "https://sidekickcn.vercel.app/r/sidekick-provider.json"
+      ],
       "files": [
         {
           "path": "src/components/sidekick/sidekick-tasks.tsx",
@@ -243,8 +279,10 @@
       "type": "registry:component",
       "title": "sidekick/cn Floating Bar",
       "description": "Floating trigger button with customizable positioning",
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button"],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": "button",
       "files": [
         {
           "path": "src/components/sidekick/sidekick-floating-bar.tsx",
@@ -257,14 +295,16 @@
       "type": "registry:component",
       "title": "sidekick/cn Floating Widget",
       "description": "Floating chat widget (50vh) with clean design, ScrollArea, and keyboard shortcuts",
-      "dependencies": ["lucide-react"],
+      "dependencies": [
+        "lucide-react"
+      ],
       "registryDependencies": [
         "button",
         "scroll-area",
-        "sidekick-provider",
-        "ai-elements-message",
-        "ai-elements-prompt-input",
-        "ai-elements-shimmer"
+        "https://sidekickcn.vercel.app/r/sidekick-provider.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-message.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-prompt-input.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-shimmer.json"
       ],
       "files": [
         {
@@ -278,15 +318,18 @@
       "type": "registry:component",
       "title": "sidekick/cn Sliding Sidebar",
       "description": "Chrome extension-style sliding sidebar that wraps content with search bar and smooth animations",
-      "dependencies": ["lucide-react", "motion"],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
       "registryDependencies": [
         "button",
         "input",
         "scroll-area",
-        "sidekick-provider",
-        "ai-elements-message",
-        "ai-elements-prompt-input",
-        "ai-elements-shimmer"
+        "https://sidekickcn.vercel.app/r/sidekick-provider.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-message.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-prompt-input.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-shimmer.json"
       ],
       "files": [
         {
@@ -301,23 +344,39 @@
       "title": "Complete sidekick/cn",
       "description": "Full sidekick/cn with all layouts (floating, sidebar, panel), AI elements, and  features",
       "registryDependencies": [
-        "sidekick-config",
-        "use-sidekick",
-        "sidekick-provider",
-        "ai-elements-full",
-        "sidekick-ui",
-        "sidekick-header",
-        "sidekick-chat",
-        "sidekick-floating",
-        "sidekick-sidebar",
-        "sidekick-tasks",
-        "sidekick-floating-bar",
-        "sidekick-ai-route"
+        "https://sidekickcn.vercel.app/r/sidekick-config.json",
+        "https://sidekickcn.vercel.app/r/use-sidekick.json",
+        "https://sidekickcn.vercel.app/r/sidekick-provider.json",
+        "https://sidekickcn.vercel.app/r/ai-elements-full.json",
+        "https://sidekickcn.vercel.app/r/sidekick-ui.json",
+        "https://sidekickcn.vercel.app/r/sidekick-header.json",
+        "https://sidekickcn.vercel.app/r/sidekick-chat.json",
+        "https://sidekickcn.vercel.app/r/sidekick-floating.json",
+        "https://sidekickcn.vercel.app/r/sidekick-sidebar.json",
+        "https://sidekickcn.vercel.app/r/sidekick-tasks.json",
+        "https://sidekickcn.vercel.app/r/sidekick-floating-bar.json",
+        "https://sidekickcn.vercel.app/r/sidekick-ai-route.json"
       ],
       "files": [
         {
           "path": "src/components/sidekick/index.tsx",
           "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sidekick-ai-route",
+      "type": "registry:route",
+      "title": "sidekick/cn AI Route",
+      "description": "Next.js API route for sidekick/cn",
+      "dependencies": [
+        "ai",
+        "@ai-sdk/openai"
+      ],
+      "files": [
+        {
+          "path": "src/app/api/ai/route.ts",
+          "type": "registry:route"
         }
       ]
     }

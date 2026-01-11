@@ -6,8 +6,8 @@
   "description": "Context provider for sidekick/cn with AI Gateway integration, workflow management, and composable architecture",
   "dependencies": [],
   "registryDependencies": [
-    "sidekick-config",
-    "use-sidekick"
+    "https://sidekickcn.vercel.app/r/sidekick-config.json",
+    "https://sidekickcn.vercel.app/r/use-sidekick.json"
   ],
   "files": [
     {

@@ -7,9 +7,7 @@
   "dependencies": [
     "lucide-react"
   ],
-  "registryDependencies": [
-    "button"
-  ],
+  "registryDependencies": "button",
   "files": [
     {
       "path": "src/components/ai-elements/conversation.tsx",

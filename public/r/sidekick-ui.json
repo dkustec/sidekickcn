@@ -4,7 +4,7 @@
   "type": "registry:component",
   "title": "sidekick/cn UI",
   "description": "Root wrapper with layout options (default, panel, minimal, fullscreen)",
-  "registryDependencies": [],
+  "registryDependencies": null,
   "files": [
     {
       "path": "src/components/sidekick/sidekick-ui.tsx",
