@@ -376,7 +376,7 @@
     },
     {
       "name": "sidekick-ai-route",
-      "type": "registry:route",
+      "type": "registry:component",
       "title": "sidekick/cn AI Route",
       "description": "Next.js API route for sidekick/cn",
       "dependencies": [
@@ -386,7 +386,7 @@
       "files": [
         {
           "path": "src/app/api/ai/route.ts",
-          "type": "registry:route"
+          "type": "registry:component"
         }
       ]
     }
