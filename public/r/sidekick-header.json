@@ -7,9 +7,6 @@
   "dependencies": [
     "lucide-react"
   ],
-  "registryDependencies": [
-    null
-  ],
   "files": [
     {
       "path": "src/components/sidekick/sidekick-header.tsx",

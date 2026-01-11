@@ -20,9 +20,7 @@
       "type": "registry:hook",
       "title": "useSidekick Hook",
       "description": "React hook for accessing sidekick/cn context and AI functionality",
-      "registryDependencies": [
-        "https://sidekickcn-one.vercel.app/r/sidekick-config.json"
-      ],
+      "registryDependencies": "https://sidekickcn-one.vercel.app/r/sidekick-config.json",
       "files": [
         {
           "path": "src/hooks/use-sidekick.tsx",
@@ -55,9 +53,7 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
+      "registryDependencies": "button",
       "files": [
         {
           "path": "src/components/ai-elements/message.tsx",
@@ -73,9 +69,7 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
+      "registryDependencies": "button",
       "files": [
         {
           "path": "src/components/ai-elements/conversation.tsx",
@@ -91,9 +85,7 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "collapsible"
-      ],
+      "registryDependencies": "collapsible",
       "files": [
         {
           "path": "src/components/ai-elements/sources.tsx",
@@ -109,9 +101,7 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "collapsible"
-      ],
+      "registryDependencies": "collapsible",
       "files": [
         {
           "path": "src/components/ai-elements/reasoning.tsx",
@@ -214,9 +204,6 @@
       "type": "registry:component",
       "title": "sidekick/cn UI",
       "description": "Root wrapper with layout options (default, panel, minimal, fullscreen)",
-      "registryDependencies": [
-        null
-      ],
       "files": [
         {
           "path": "src/components/sidekick/sidekick-ui.tsx",
@@ -231,9 +218,6 @@
       "description": "Header with title, subtitle, and status indicator",
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        null
       ],
       "files": [
         {
@@ -296,9 +280,7 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
+      "registryDependencies": "button",
       "files": [
         {
           "path": "src/components/sidekick/sidekick-floating-bar.tsx",
