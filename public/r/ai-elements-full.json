@@ -5,14 +5,14 @@
   "title": "All AI Elements",
   "description": "Complete set of AI element components",
   "registryDependencies": [
-    "https://sidekickcn.vercel.app/r/ai-elements-message.json",
-    "https://sidekickcn.vercel.app/r/ai-elements-conversation.json",
-    "https://sidekickcn.vercel.app/r/ai-elements-sources.json",
-    "https://sidekickcn.vercel.app/r/ai-elements-reasoning.json",
-    "https://sidekickcn.vercel.app/r/ai-elements-suggestion.json",
-    "https://sidekickcn.vercel.app/r/ai-elements-prompt-input.json",
-    "https://sidekickcn.vercel.app/r/ai-elements-model-selector.json",
-    "https://sidekickcn.vercel.app/r/ai-elements-shimmer.json"
+    "/r/ai-elements-message.json",
+    "/r/ai-elements-conversation.json",
+    "/r/ai-elements-sources.json",
+    "/r/ai-elements-reasoning.json",
+    "/r/ai-elements-suggestion.json",
+    "/r/ai-elements-prompt-input.json",
+    "/r/ai-elements-model-selector.json",
+    "/r/ai-elements-shimmer.json"
   ],
   "files": [
     {
@@ -22,3 +22,4 @@
     }
   ]
 }
+
